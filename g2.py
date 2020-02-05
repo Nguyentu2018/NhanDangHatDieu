@@ -9,7 +9,7 @@ def send(data):
       s.write((data+"\n").encode('utf-8'))
 
 def read():
-     dataRead = s.readline()
+     dataRead = s.readline().decode()
      return dataRead
 
 def close():
