@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1028</width>
-    <height>792</height>
+    <width>1019</width>
+    <height>751</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -41,6 +41,8 @@ QPushButton{
     padding: 6px;
 	background-color: rgb(76, 173, 87);
 	
+	border-color: rgb(127, 127, 127);
+	
 }
 
 QPushButton:pressed {
@@ -56,9 +58,7 @@ QPushButton::menu-indicator {
     left: -2px;
 }
 
-QMainWindow{
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(9, 41, 4, 255), stop:0.085 rgba(2, 79, 0, 255), stop:0.19 rgba(50, 147, 22, 255), stop:0.275 rgba(236, 191, 49, 255), stop:0.39 rgba(243, 61, 34, 255), stop:0.555 rgba(135, 81, 60, 255), stop:0.667 rgba(121, 75, 255, 255), stop:0.825 rgba(164, 255, 244, 255), stop:0.885 rgba(104, 222, 71, 255), stop:1 rgba(93, 128, 0, 255));
-}
+
 </string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -125,17 +125,17 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
           <widget class="QLabel" name="lb_Cam_2">
            <property name="geometry">
             <rect>
-             <x>760</x>
-             <y>480</y>
-             <width>211</width>
-             <height>161</height>
+             <x>660</x>
+             <y>390</y>
+             <width>321</width>
+             <height>251</height>
             </rect>
            </property>
            <property name="styleSheet">
-            <string notr="true">background-color: rgb(165, 165, 165);</string>
+            <string notr="true">background-color: rgb(129, 129, 129);</string>
            </property>
            <property name="text">
-            <string>lb_Cam</string>
+            <string/>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
@@ -157,7 +157,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
             <string/>
            </property>
            <property name="pixmap">
-            <pixmap>C:/Users/ADMIN/Downloads/logopp.jpg</pixmap>
+            <pixmap>F:/Dowload/Logo01(1).jpg</pixmap>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
@@ -168,13 +168,19 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
             <rect>
              <x>10</x>
              <y>500</y>
-             <width>421</width>
+             <width>321</width>
              <height>151</height>
             </rect>
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout">
             <item>
              <widget class="QPushButton" name="btnChup">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="font">
                <font>
                 <pointsize>-1</pointsize>
@@ -187,11 +193,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
                <string notr="true"/>
               </property>
               <property name="text">
-               <string/>
-              </property>
-              <property name="icon">
-               <iconset>
-                <normaloff>F:/Dowload/start-png-44883.png</normaloff>F:/Dowload/start-png-44883.png</iconset>
+               <string>Cap</string>
               </property>
               <property name="iconSize">
                <size>
@@ -203,6 +205,12 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
             </item>
             <item>
              <widget class="QPushButton" name="btnStart">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="font">
                <font>
                 <pointsize>-1</pointsize>
@@ -217,10 +225,6 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
               <property name="text">
                <string>Start</string>
               </property>
-              <property name="icon">
-               <iconset>
-                <normaloff>F:/Icon/Borland OK button.bmp</normaloff>F:/Icon/Borland OK button.bmp</iconset>
-              </property>
               <property name="iconSize">
                <size>
                 <width>100</width>
@@ -231,55 +235,13 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
             </item>
            </layout>
           </widget>
-          <widget class="QWidget" name="formLayoutWidget">
+          <widget class="QWidget" name="layoutWidget">
            <property name="geometry">
             <rect>
-             <x>660</x>
-             <y>140</y>
-             <width>311</width>
-             <height>107</height>
-            </rect>
-           </property>
-           <layout class="QFormLayout" name="formLayout">
-            <item row="0" column="0">
-             <widget class="QLabel" name="label_4">
-              <property name="text">
-               <string>Color 1:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="1">
-             <widget class="QComboBox" name="cbb_Mauthu1"/>
-            </item>
-            <item row="1" column="0">
-             <widget class="QLabel" name="label_7">
-              <property name="text">
-               <string>Color 2:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="1" column="1">
-             <widget class="QComboBox" name="cbb_Mauthu2"/>
-            </item>
-            <item row="2" column="0">
-             <widget class="QLabel" name="label_8">
-              <property name="text">
-               <string>Color 3:</string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="QComboBox" name="cbb_Mauthu3"/>
-            </item>
-           </layout>
-          </widget>
-          <widget class="QWidget" name="">
-           <property name="geometry">
-            <rect>
-             <x>670</x>
-             <y>0</y>
-             <width>321</width>
-             <height>91</height>
+             <x>650</x>
+             <y>10</y>
+             <width>331</width>
+             <height>209</height>
             </rect>
            </property>
            <layout class="QFormLayout" name="formLayout_3">
@@ -287,7 +249,9 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
              <widget class="QLabel" name="label_NameColor">
               <property name="font">
                <font>
-                <pointsize>20</pointsize>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
                </font>
               </property>
               <property name="text">
@@ -295,11 +259,27 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
               </property>
              </widget>
             </item>
-            <item row="0" column="1">
-             <widget class="QLabel" name="lb_Time">
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_NameColor_2">
               <property name="font">
                <font>
-                <pointsize>20</pointsize>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Time:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLabel" name="lb_Mauphathien">
+              <property name="font">
+               <font>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
                </font>
               </property>
               <property name="text">
@@ -313,23 +293,106 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
               </property>
              </widget>
             </item>
-            <item row="1" column="0">
-             <widget class="QLabel" name="label_NameColor_2">
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_4">
               <property name="font">
                <font>
-                <pointsize>20</pointsize>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
                </font>
               </property>
               <property name="text">
-               <string>Time:</string>
+               <string>Color 1:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_7">
+              <property name="font">
+               <font>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Color 2:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_8">
+              <property name="font">
+               <font>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Color 3:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QComboBox" name="cbb_Mauthu1">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QComboBox" name="cbb_Mauthu2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QComboBox" name="cbb_Mauthu3">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
               </property>
              </widget>
             </item>
             <item row="1" column="1">
-             <widget class="QLabel" name="lb_Mauphathien">
+             <widget class="QLabel" name="lb_Time">
               <property name="font">
                <font>
-                <pointsize>20</pointsize>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
                </font>
               </property>
               <property name="text">
@@ -347,8 +410,6 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
           </widget>
          </widget>
          <zorder>widget</zorder>
-         <zorder>label_NameColor</zorder>
-         <zorder>lb_Mauphathien</zorder>
          <zorder>lb_data</zorder>
         </widget>
         <widget class="QWidget" name="tab_3">
@@ -755,7 +816,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1028</width>
+     <width>1019</width>
      <height>26</height>
     </rect>
    </property>
@@ -828,9 +889,7 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb
    </property>
   </action>
  </widget>
- <resources>
-  <include location="F:/Dowload/a.qrc"/>
- </resources>
+ <resources/>
  <connections>
   <connection>
    <sender>horizontalSlider_5</sender>

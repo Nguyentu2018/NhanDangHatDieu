@@ -255,7 +255,7 @@ def BoLoc(data, img):
                             1)
                 cv2.putText(img, "(" + str(int(x)) + "," + str(int(y)) + ")", (center[0] + 10, center[1] + 15),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.4, (0, 0, 255), 1)
-                cv2.rectangle(img, (270, 215), (270 + 50, 215 + 30), (0, 255, 0), 2)
+                # cv2.rectangle(img, (270, 215), (270 + 50, 215 + 30), (0, 255, 0), 2)
                 phathien = True
 
     return mask, phathien
